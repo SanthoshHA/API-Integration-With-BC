@@ -1,0 +1,2039 @@
+{
+	"info": {
+		"_postman_id": "ed40a7d7-a285-489f-8fc7-a160d67a23a9",
+		"name": "Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2891700"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "GET OAuth",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenName",
+									"value": "260622-1",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1NjI1NDYwMSwibmJmIjoxNjU2MjU0NjAxLCJleHAiOjE2NTYyNTg1MDEsImFpbyI6IkUyWmdZQkNKdlZlbVYrZjVhTVVHM3k2VHVROFlBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6ImV3WjR1NGZya1VHXzMxeHhMY3N6QUEiLCJ2ZXIiOiIxLjAifQ.R2daFqQyc1K-WBPwAVzu1EILO1ZqcG2-PUNZvosOJkxXkEOTOZU7AHFGvutoC-awayJnY3KVFO1GVRGMMRF58Dst2aAX0xHPdbjlQaS4qHE0qWB2p_e9tl4Oi3j4glkDQW3uX6grprpm4T4CT60WFL_dbXNNkXR8cwoowk5CqW5nPsoFipyOgr1UAunHNCgiT_b9WNviG80bXeksnRqQrK7AHVgSLxhCw7aNpHjhg6O3QjrO9LY1_Bmby33fH5IuY9qG11UnrLtgtfwMKENIjoTz2BZgtzbU8mbv2U0iD5qQ9s6AlVGvCDwiWn-lj0rqeMf0pmuK0jTVHt_Iv_KDNw",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Basic Auth",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Standard API",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Test Customer\",\r\n    \"type\": \"Company\",\r\n    \"addressLine1\": \"33 Ohio Court\",\r\n    \"addressLine2\": \"Triq il-Miklem Malti\",\r\n    \"city\": \"Marsaskala\"\r\n}"
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "If-Match",
+								"value": "*",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"displayName\": \"Test Customer1\",\r\n    \"addressLine1\": \"34 Ohio Court\"\r\n}\r\n\r\n"
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers(b61f022e-8ff5-ec11-82f8-0022481b86c0)",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers(b61f022e-8ff5-ec11-82f8-0022481b86c0)"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers(b61f022e-8ff5-ec11-82f8-0022481b86c0)",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers(b61f022e-8ff5-ec11-82f8-0022481b86c0)"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Query Parameters",
+			"item": [
+				{
+					"name": "$filter",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers?$filter=startswith(displayName,'Test')",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "startswith(displayName,'Test')"
+								},
+								{
+									"key": "$filter",
+									"value": "country eq 'US'",
+									"disabled": true
+								},
+								{
+									"key": "$filter",
+									"value": "balanceDue gt 10000",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$select",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers?$filter=balanceDue gt 10000&$select=number,displayName,balanceDue",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "balanceDue gt 10000"
+								},
+								{
+									"key": "$select",
+									"value": "number,displayName,balanceDue"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$orderby",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers?$select=number,displayName&$orderby=displayName desc",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "balanceDue gt 10000",
+									"disabled": true
+								},
+								{
+									"key": "$select",
+									"value": "number,displayName"
+								},
+								{
+									"key": "$orderby",
+									"value": "displayName desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$top",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers?$top=3",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "number,displayName,addressLine1,balanceDue",
+									"disabled": true
+								},
+								{
+									"key": "$top",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$skip",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers?$skip=2",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "number,displayName,addressLine1,balanceDue",
+									"disabled": true
+								},
+								{
+									"key": "$top",
+									"value": "3",
+									"disabled": true
+								},
+								{
+									"key": "$skip",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/customers/$count?$filter=balanceDue gt 1000",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"customers",
+								"$count"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "balanceDue gt 1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$expand",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/salesOrders?$expand=salesOrderLines,customer",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"salesOrders"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "number eq '1002'",
+									"disabled": true
+								},
+								{
+									"key": "$expand",
+									"value": "salesOrderLines,customer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "$expand - Deep Insert",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerNumber\": \"10000\",\r\n    \"salesOrderLines\": [\r\n        {\r\n            \"lineType\": \"Item\",\r\n            \"lineObjectNumber\": \"1968-S\"\r\n        },\r\n        {\r\n            \"lineType\": \"Item\",\r\n            \"lineObjectNumber\": \"1928-S\"\r\n        }\r\n    ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/salesOrders?$expand=salesOrderLines",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"salesOrders"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "salesOrderLines"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custom API",
+			"item": [
+				{
+					"name": "Existing Entity",
+					"item": [
+						{
+							"name": "Customer",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "santhosh.anjankumar",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/kpmg/mbs/v2.0/companies({{CompanyID}})/customers",
+									"protocol": "https",
+									"host": [
+										"api",
+										"businesscentral",
+										"dynamics",
+										"com"
+									],
+									"path": [
+										"v2.0",
+										"{{TenantID}}",
+										"{{EnvironmentName}}",
+										"api",
+										"kpmg",
+										"mbs",
+										"v2.0",
+										"companies({{CompanyID}})",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "santhosh.anjankumar",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "    {    \r\n        \"displayName\": \"Demo Customer\",\r\n        \"type\": \"Company\",\r\n        \"addressLine1\": \"33 Ohio Court\",\r\n        \"addressLine2\": \"Triq il-Miklem Malti\",\r\n        \"city\": \"Marsaskala\",\r\n        \"contractNumber\":\"1234\"\r\n    }"
+								},
+								"url": {
+									"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/kpmg/mbs/v2.0/companies({{CompanyID}})/customers",
+									"protocol": "https",
+									"host": [
+										"api",
+										"businesscentral",
+										"dynamics",
+										"com"
+									],
+									"path": [
+										"v2.0",
+										"{{TenantID}}",
+										"{{EnvironmentName}}",
+										"api",
+										"kpmg",
+										"mbs",
+										"v2.0",
+										"companies({{CompanyID}})",
+										"customers"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "New Entity",
+					"item": [
+						{
+							"name": "Car Brand",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "santhosh.anjankumar",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/bctech/demo/v2.0/companies({{CompanyID}})/carBrands",
+									"protocol": "https",
+									"host": [
+										"api",
+										"businesscentral",
+										"dynamics",
+										"com"
+									],
+									"path": [
+										"v2.0",
+										"{{TenantID}}",
+										"{{EnvironmentName}}",
+										"api",
+										"bctech",
+										"demo",
+										"v2.0",
+										"companies({{CompanyID}})",
+										"carBrands"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Car Model",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "santhosh.anjankumar",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/bctech/demo/v2.0/companies({{CompanyID}})/carModels",
+									"protocol": "https",
+									"host": [
+										"api",
+										"businesscentral",
+										"dynamics",
+										"com"
+									],
+									"path": [
+										"v2.0",
+										"{{TenantID}}",
+										"{{EnvironmentName}}",
+										"api",
+										"bctech",
+										"demo",
+										"v2.0",
+										"companies({{CompanyID}})",
+										"carModels"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "$expand - Deep Insert",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "santhosh.anjankumar",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"BMW2\",\r\n    \"description\": \"BMW2\",\r\n    \"country\": \"Italy\",\r\n    \"carModels\": [\r\n        {\r\n            \"name\": \"BMW2 - MODEL1\",\r\n            \"description\": \"Model 1\",\r\n            \"power\": 1700,\r\n            \"fuelType\": \"Petrol\"\r\n        },\r\n        {\r\n            \"name\": \"BMW2 - MODEL2\",\r\n            \"description\": \"Model 2\",\r\n            \"power\": 1700,\r\n            \"fuelType\": \"Diesel\"\r\n        }\r\n    ]\r\n}\r\n\r\n"
+								},
+								"url": {
+									"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/bctech/demo/v2.0/companies({{CompanyID}})/carBrands?&$expand=carModels",
+									"protocol": "https",
+									"host": [
+										"api",
+										"businesscentral",
+										"dynamics",
+										"com"
+									],
+									"path": [
+										"v2.0",
+										"{{TenantID}}",
+										"{{EnvironmentName}}",
+										"api",
+										"bctech",
+										"demo",
+										"v2.0",
+										"companies({{CompanyID}})",
+										"carBrands"
+									],
+									"query": [
+										{
+											"key": null,
+											"value": null
+										},
+										{
+											"key": "$expand",
+											"value": "carModels"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bound Action",
+			"item": [
+				{
+					"name": "Bound action - SO Post",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/api/v2.0/companies({{CompanyID}})/salesOrders(2670abb1-f2dc-ec11-82f8-0022481ace7a)/Microsoft.NAV.shipAndInvoice",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"api",
+								"v2.0",
+								"companies({{CompanyID}})",
+								"salesOrders(2670abb1-f2dc-ec11-82f8-0022481ace7a)",
+								"Microsoft.NAV.shipAndInvoice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OData V4 Unbound action - Escaped JSON",
+			"item": [
+				{
+					"name": "Multiple Customers",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customers\": \"[{\\\"displayName\\\":\\\"Demo Customer\\\",\\\"addressLine1\\\":\\\"33 Ohio Court\\\",\\\"addressLine2\\\":\\\"Miklem Malti\\\",\\\"city\\\":\\\"Marsaskala\\\",\\\"contractNumber\\\":1234},{\\\"displayName\\\":\\\"Demo Customer2\\\",\\\"addressLine1\\\":\\\"123 Bellavista\\\",\\\"addressLine2\\\":\\\"unknown\\\",\\\"city\\\":\\\"Marsaskala\\\",\\\"contractNumber\\\":4321}]\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/ODataV4/Customers_InsertCustomer?company={{CompanyID}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"ODataV4",
+								"Customers_InsertCustomer"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "{{CompanyID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sales Invoice Header and Lines",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "santhosh.anjankumar",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Ji5Q3Kyf8LkncjMAysAX4fltP8AOawEWlNUQeBZ4iAE=",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"documents\": \"[{\\\"sellToCustomerNo\\\":\\\"01445544\\\",\\\"postingDate\\\":\\\"2022-05-11\\\",\\\"dueDate\\\":\\\"2022-06-11\\\",\\\"externalDocumentNo\\\":\\\"\\\",\\\"yourReference\\\":\\\"OPEN\\\",\\\"salespersonCode\\\":\\\"JO\\\",\\\"invoiceType\\\":\\\"01\\\",\\\"contractNumber\\\":98765345,\\\"vin\\\":\\\"11243457888\\\",\\\"salesLines\\\":[{\\\"lineNo\\\":10000,\\\"type\\\":\\\"Item\\\",\\\"no\\\":\\\"1968-S\\\",\\\"description\\\":\\\"MEXICO Swivel Chair, black\\\",\\\"quantity\\\":5,\\\"unitPrice\\\":123.3,\\\"lineDiscount\\\":0,\\\"lineDiscountAmount\\\":0,\\\"invoiceType\\\":\\\"01\\\",\\\"contractNumber\\\":98765345,\\\"vin\\\":\\\"11243457888\\\"},{\\\"lineNo\\\":20000,\\\"type\\\":\\\"Item\\\",\\\"no\\\":\\\"1996-S\\\",\\\"description\\\":\\\"ATLANTA Whiteboard, base\\\",\\\"quantity\\\":7,\\\"lineDiscount\\\":0,\\\"lineDiscountAmount\\\":0,\\\"unitPrice\\\":906.7,\\\"invoiceType\\\":\\\"01\\\",\\\"contractNumber\\\":1234,\\\"vin\\\":\\\"12345678901234567\\\"},{\\\"lineNo\\\":30000,\\\"type\\\":\\\" \\\",\\\"no\\\":\\\"\\\",\\\"description\\\":\\\"Thank you for ordering\\\",\\\"quantity\\\":0,\\\"unitPrice\\\":0,\\\"lineDiscount\\\":0,\\\"lineDiscountAmount\\\":0,\\\"invoiceType\\\":\\\"01\\\",\\\"contractNumber\\\":1234,\\\"vin\\\":\\\"12345678901234567\\\"}]},{\\\"sellToCustomerNo\\\":\\\"01454545\\\",\\\"postingDate\\\":\\\"2022-05-11\\\",\\\"dueDate\\\":\\\"2022-06-11\\\",\\\"externalDocumentNo\\\":\\\"\\\",\\\"yourReference\\\":\\\"OPEN\\\",\\\"salespersonCode\\\":\\\"JO\\\",\\\"invoiceType\\\":\\\"02\\\",\\\"contractNumber\\\":123456,\\\"vin\\\":\\\"22243457888\\\",\\\"salesLines\\\":[{\\\"lineNo\\\":10000,\\\"type\\\":\\\"Item\\\",\\\"no\\\":\\\"1968-S\\\",\\\"description\\\":\\\"MEXICO Swivel Chair, black\\\",\\\"quantity\\\":5,\\\"unitPrice\\\":45.3,\\\"lineDiscount\\\":0,\\\"lineDiscountAmount\\\":0,\\\"invoiceType\\\":\\\"02\\\",\\\"contractNumber\\\":98765345,\\\"vin\\\":\\\"11243457888\\\"},{\\\"lineNo\\\":30000,\\\"type\\\":\\\" \\\",\\\"no\\\":\\\"\\\",\\\"description\\\":\\\"Thank you for ordering\\\",\\\"quantity\\\":0,\\\"unitPrice\\\":0,\\\"lineDiscount\\\":0,\\\"lineDiscountAmount\\\":0,\\\"invoiceType\\\":\\\"01\\\",\\\"contractNumber\\\":1234,\\\"vin\\\":\\\"12345678901234567\\\"}]}]\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/{{TenantID}}/{{EnvironmentName}}/ODataV4/SalesInvoice_InsertSalesInvoice?company={{CompanyID}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"{{TenantID}}",
+								"{{EnvironmentName}}",
+								"ODataV4",
+								"SalesInvoice_InsertSalesInvoice"
+							],
+							"query": [
+								{
+									"key": "company",
+									"value": "{{CompanyID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Batch Call",
+			"item": [
+				{
+					"name": "Basic Operation",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1Njc1NDY1OSwibmJmIjoxNjU2NzU0NjU5LCJleHAiOjE2NTY3NTg1NTksImFpbyI6IkUyWmdZQkQ4WTk2MWVMZS9uSDZuamVVYjBVOStBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6Im5iS0l6dnBnM1VLWHpGQU9mVFVyQUEiLCJ2ZXIiOiIxLjAifQ.VYS0ly_tQW5MMb7jQ0JjS80BdO5EPRhoMXLe1ipUHRYj10TPJdxuqMXbq_XMyVhB7XKIHxp68rAwb8yH1Ap5huqbF18kKhvwYnKwTmwTbecEbjjWDi0p6FW5G6i3D3Ft2Sw9sNXoNiOhmD85vVsw85hHLMJhZ9PyvNkuVr4EFh3RaLXt_PLulHeBz2rsLK5o9wLdVHbgImHaHC81co65xXfPJaVSWFx-PfUvHypNYhTtgrD4OHp1Oyc54gJ5FsJPumTubj7BxurZ6bRzP6zQRLSVBcUIAhoVHXxaDu8I4QrnuAuKywtQNzR8rvMXOAZZ08IKdDJLQN5P27wmSOJlWQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "260622",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r1\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer1\",\r\n                \"addressLine1\": \"33 Miklem Malti, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r2\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName1\": \"Test Customer2\",\r\n                \"addressLine1\": \"123 Bellavista, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r3\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer3\",\r\n                \"addressLine1\": \"36 Triq Ta Gidwet, Marsaskala\"\r\n            }\r\n        }\r\n    ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/$batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"$batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Error Handling (isolation:snapshot)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1Njc1NDY1OSwibmJmIjoxNjU2NzU0NjU5LCJleHAiOjE2NTY3NTg1NTksImFpbyI6IkUyWmdZQkQ4WTk2MWVMZS9uSDZuamVVYjBVOStBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6Im5iS0l6dnBnM1VLWHpGQU9mVFVyQUEiLCJ2ZXIiOiIxLjAifQ.VYS0ly_tQW5MMb7jQ0JjS80BdO5EPRhoMXLe1ipUHRYj10TPJdxuqMXbq_XMyVhB7XKIHxp68rAwb8yH1Ap5huqbF18kKhvwYnKwTmwTbecEbjjWDi0p6FW5G6i3D3Ft2Sw9sNXoNiOhmD85vVsw85hHLMJhZ9PyvNkuVr4EFh3RaLXt_PLulHeBz2rsLK5o9wLdVHbgImHaHC81co65xXfPJaVSWFx-PfUvHypNYhTtgrD4OHp1Oyc54gJ5FsJPumTubj7BxurZ6bRzP6zQRLSVBcUIAhoVHXxaDu8I4QrnuAuKywtQNzR8rvMXOAZZ08IKdDJLQN5P27wmSOJlWQ",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "VFS Demo",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "prefer",
+								"value": "odata.continue-on-error",
+								"type": "text"
+							},
+							{
+								"key": "isolation",
+								"value": "snapshot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r1\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer1\",\r\n                \"addressLine1\": \"33 Miklem Malti, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r2\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName1\": \"Test Customer2\",\r\n                \"addressLine1\": \"123 Bellavista, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r3\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer3\",\r\n                \"addressLine1\": \"612 Zonqor, Marsaskala\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/$batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"$batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reduce response payload",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1Njc1NDY1OSwibmJmIjoxNjU2NzU0NjU5LCJleHAiOjE2NTY3NTg1NTksImFpbyI6IkUyWmdZQkQ4WTk2MWVMZS9uSDZuamVVYjBVOStBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6Im5iS0l6dnBnM1VLWHpGQU9mVFVyQUEiLCJ2ZXIiOiIxLjAifQ.VYS0ly_tQW5MMb7jQ0JjS80BdO5EPRhoMXLe1ipUHRYj10TPJdxuqMXbq_XMyVhB7XKIHxp68rAwb8yH1Ap5huqbF18kKhvwYnKwTmwTbecEbjjWDi0p6FW5G6i3D3Ft2Sw9sNXoNiOhmD85vVsw85hHLMJhZ9PyvNkuVr4EFh3RaLXt_PLulHeBz2rsLK5o9wLdVHbgImHaHC81co65xXfPJaVSWFx-PfUvHypNYhTtgrD4OHp1Oyc54gJ5FsJPumTubj7BxurZ6bRzP6zQRLSVBcUIAhoVHXxaDu8I4QrnuAuKywtQNzR8rvMXOAZZ08IKdDJLQN5P27wmSOJlWQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "Demo1",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "prefer",
+								"value": "odata.continue-on-error",
+								"type": "text"
+							},
+							{
+								"key": "isolation",
+								"value": "snapshot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r1\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers?$select=number,displayName\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer1\",\r\n                \"addressLine1\": \"33 Miklem Malti, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r2\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\",\r\n                \"Prefer\":\"return-no-content\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer2\",\r\n                \"addressLine1\": \"123 Bellavista, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r3\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"displayName1\": \"Test Customer3\",\r\n                \"addressLine1\": \"612 Zonqor, Marsaskala\"\r\n            }\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/$batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"$batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple Operation",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1Njc1NDY1OSwibmJmIjoxNjU2NzU0NjU5LCJleHAiOjE2NTY3NTg1NTksImFpbyI6IkUyWmdZQkQ4WTk2MWVMZS9uSDZuamVVYjBVOStBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6Im5iS0l6dnBnM1VLWHpGQU9mVFVyQUEiLCJ2ZXIiOiIxLjAifQ.VYS0ly_tQW5MMb7jQ0JjS80BdO5EPRhoMXLe1ipUHRYj10TPJdxuqMXbq_XMyVhB7XKIHxp68rAwb8yH1Ap5huqbF18kKhvwYnKwTmwTbecEbjjWDi0p6FW5G6i3D3Ft2Sw9sNXoNiOhmD85vVsw85hHLMJhZ9PyvNkuVr4EFh3RaLXt_PLulHeBz2rsLK5o9wLdVHbgImHaHC81co65xXfPJaVSWFx-PfUvHypNYhTtgrD4OHp1Oyc54gJ5FsJPumTubj7BxurZ6bRzP6zQRLSVBcUIAhoVHXxaDu8I4QrnuAuKywtQNzR8rvMXOAZZ08IKdDJLQN5P27wmSOJlWQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "Demo1",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "prefer",
+								"value": "odata.continue-on-error",
+								"type": "text"
+							},
+							{
+								"key": "isolation",
+								"value": "snapshot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r1\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\",\r\n                \"Prefer\": \"return-no-content\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Test Customer1\",\r\n                \"addressLine1\": \"33 Miklem Malti, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"GET\",\r\n            \"id\": \"r2\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers(6849ae73-83e5-ec11-82f8-0022481a3eaa)?$select=number,displayName\"\r\n        },\r\n        {\r\n            \"method\": \"PATCH\",\r\n            \"id\": \"r3\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers(6849ae73-83e5-ec11-82f8-0022481a3eaa)?$select=number,displayName\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\",\r\n                \"if-match\": \"*\"\r\n            },\r\n            \"body\": {\r\n                \"displayName\": \"Some Customer Name\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"DELETE\",\r\n            \"id\": \"r4\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers(6449ae73-83e5-ec11-82f8-0022481a3eaa)\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/$batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"$batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Journal Lines and Post (dependsOn)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1Njc1NDY1OSwibmJmIjoxNjU2NzU0NjU5LCJleHAiOjE2NTY3NTg1NTksImFpbyI6IkUyWmdZQkQ4WTk2MWVMZS9uSDZuamVVYjBVOStBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6Im5iS0l6dnBnM1VLWHpGQU9mVFVyQUEiLCJ2ZXIiOiIxLjAifQ.VYS0ly_tQW5MMb7jQ0JjS80BdO5EPRhoMXLe1ipUHRYj10TPJdxuqMXbq_XMyVhB7XKIHxp68rAwb8yH1Ap5huqbF18kKhvwYnKwTmwTbecEbjjWDi0p6FW5G6i3D3Ft2Sw9sNXoNiOhmD85vVsw85hHLMJhZ9PyvNkuVr4EFh3RaLXt_PLulHeBz2rsLK5o9wLdVHbgImHaHC81co65xXfPJaVSWFx-PfUvHypNYhTtgrD4OHp1Oyc54gJ5FsJPumTubj7BxurZ6bRzP6zQRLSVBcUIAhoVHXxaDu8I4QrnuAuKywtQNzR8rvMXOAZZ08IKdDJLQN5P27wmSOJlWQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "Demo1",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "prefer",
+								"value": "odata.continue-on-error",
+								"type": "text"
+							},
+							{
+								"key": "isolation",
+								"value": "snapshot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"1\",\r\n            \"url\": \"companies({{CompanyID}})/journals({{journalId}})/journalLines\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\",\r\n                \"Prefer\": \"return-no-content\"\r\n            },\r\n            \"body\": {\r\n                \"accountId\": \"{{accountId}}\",\r\n                \"postingDate\": \"2022-07-02\",\r\n                \"documentNumber\": \"Demo_070222_01\",\r\n                \"amount\": -1200,\r\n                \"description\": \"Salary to Bob\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"2\",\r\n            \"url\": \"companies({{CompanyID}})/journals({{journalId}})/journalLines\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\",\r\n                \"Prefer\": \"return-no-content\"\r\n            },\r\n            \"body\": {\r\n                \"accountId\": \"{{accountId}}\",\r\n                \"postingDate\": \"2022-07-02\",\r\n                \"documentNumber\": \"Demo_070222_02\",\r\n                \"amount\": -1500,\r\n                \"description\": \"Salary to Cris\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n\t\t\t\"id\": \"3\",\r\n            \"dependsOn\": [\"1\",\"2\"],\r\n\t\t\t\"url\": \"companies({{CompanyID}})/journals({{journalId}})/Microsoft.NAV.post\",\r\n\t\t\t\"headers\": {\r\n\t\t\t\t\"Content-Type\": \"application/json\"\r\n\t\t\t}\r\n        }\r\n    ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/$batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"$batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer and Create SO with same customer",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenType",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL2FwaS5idXNpbmVzc2NlbnRyYWwuZHluYW1pY3MuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvMTU4YzE5MjMtZTNjOS00YTE1LTg0YWItZDlmMzFkNDdiNjgxLyIsImlhdCI6MTY1Njc1NDY1OSwibmJmIjoxNjU2NzU0NjU5LCJleHAiOjE2NTY3NTg1NTksImFpbyI6IkUyWmdZQkQ4WTk2MWVMZS9uSDZuamVVYjBVOStBQT09IiwiYXBwaWQiOiIxMDVhZWVlOC1jYWZlLTQzYzktOTM1Yy02NGNjZTRmZDdhNDAiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xNThjMTkyMy1lM2M5LTRhMTUtODRhYi1kOWYzMWQ0N2I2ODEvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJiZDZlMDkxMC1hZjNlLTQ4NTAtODIwMC05ZmJkNTllOTdkN2EiLCJyaCI6IjAuQVhvQUl4bU1GY25qRlVxRXE5bnpIVWUyZ1QzdmJabHNzMU5CaGdlbV9Ud0J1Sjk2QUFBLiIsInJvbGVzIjpbIkFQSS5SZWFkV3JpdGUuQWxsIl0sInN1YiI6ImJkNmUwOTEwLWFmM2UtNDg1MC04MjAwLTlmYmQ1OWU5N2Q3YSIsInRpZCI6IjE1OGMxOTIzLWUzYzktNGExNS04NGFiLWQ5ZjMxZDQ3YjY4MSIsInV0aSI6Im5iS0l6dnBnM1VLWHpGQU9mVFVyQUEiLCJ2ZXIiOiIxLjAifQ.VYS0ly_tQW5MMb7jQ0JjS80BdO5EPRhoMXLe1ipUHRYj10TPJdxuqMXbq_XMyVhB7XKIHxp68rAwb8yH1Ap5huqbF18kKhvwYnKwTmwTbecEbjjWDi0p6FW5G6i3D3Ft2Sw9sNXoNiOhmD85vVsw85hHLMJhZ9PyvNkuVr4EFh3RaLXt_PLulHeBz2rsLK5o9wLdVHbgImHaHC81co65xXfPJaVSWFx-PfUvHypNYhTtgrD4OHp1Oyc54gJ5FsJPumTubj7BxurZ6bRzP6zQRLSVBcUIAhoVHXxaDu8I4QrnuAuKywtQNzR8rvMXOAZZ08IKdDJLQN5P27wmSOJlWQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "Demo1",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "prefer",
+								"value": "odata.continue-on-error",
+								"type": "text"
+							},
+							{
+								"key": "isolation",
+								"value": "snapshot",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r1\",\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers?$select=id,number,displayName\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"number\": \"TESTCUST03\",\r\n                \"displayName\": \"Test Customer3\",\r\n                \"addressLine1\": \"23 Miklem Malti, Marsaskala\"\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r2\",\r\n            \"dependsOn\": [\"r1\"],\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/salesOrders?$expand=salesOrderLines\",\r\n            \"headers\": {\r\n                \"Content-Type\": \"application/json\"\r\n            },\r\n            \"body\": {\r\n                \"number\": \"1018\",\r\n                \"orderDate\": \"2015-12-31\",\r\n                \"customerNumber\": \"TESTCUST03\",\r\n                \"salesOrderLines\": [\r\n                    {\r\n                        \"lineType\": \"Item\",\r\n                        \"lineObjectNumber\": \"1996-S\",\r\n                        \"quantity\": 1,\r\n                        \"unitPrice\": 89.2\r\n                    },\r\n                    {\r\n                        \"lineType\": \"Item\",\r\n                        \"lineObjectNumber\": \"1928-S\",\r\n                        \"quantity\": 2,\r\n                        \"unitPrice\": 35.6\r\n                    }\r\n                ]\r\n            }\r\n        },\r\n        {\r\n            \"method\": \"POST\",\r\n            \"id\": \"r3\",\r\n            \"dependsOn\": [\"r2\"],\r\n            \"url\": \"companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/salesOrders({{SalesOrderID}})/Microsoft.NAV.shipAndInvoice\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/$batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"$batch"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "number,displayName,unitPrice,unitCost",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Webhook subscription",
+			"item": [
+				{
+					"name": "subscriptions",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "client_authentication",
+									"value": "body",
+									"type": "string"
+								},
+								{
+									"key": "scope",
+									"value": "https://api.businesscentral.dynamics.com/.default",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "XrM8Q~9BjZwMnsh7EAPBY-1BtsVUdD.--rHEiaD8",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "105aeee8-cafe-43c9-935c-64cce4fd7a40",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://login.microsoftonline.com/158c1923-e3c9-4a15-84ab-d9f31d47b681/oauth2/v2.0/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "VFS Demo",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"notificationUrl\": \"https://businesscentralwebhookdemo.azurewebsites.net/api/BCWebHook1\",\r\n  \"resource\": \"https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/companies(1ebab714-4189-ec11-bb86-6045bd8e5cac)/customers\",\r\n  \"clientState\": \"Demo123!\"\r\n}"
+						},
+						"url": {
+							"raw": "https://api.businesscentral.dynamics.com/v2.0/158c1923-e3c9-4a15-84ab-d9f31d47b681/BSDev-Demo01/api/v2.0/subscriptions",
+							"protocol": "https",
+							"host": [
+								"api",
+								"businesscentral",
+								"dynamics",
+								"com"
+							],
+							"path": [
+								"v2.0",
+								"158c1923-e3c9-4a15-84ab-d9f31d47b681",
+								"BSDev-Demo01",
+								"api",
+								"v2.0",
+								"subscriptions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TenantID",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "EnvironmentName",
+			"value": ""
+		},
+		{
+			"key": "CompanyID",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "journalId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "accountId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
