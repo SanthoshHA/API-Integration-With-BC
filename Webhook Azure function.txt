@@ -1,0 +1,34 @@
+#r "Newtonsoft.Json"
+
+using System.Net;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
+using Newtonsoft.Json;
+    
+const string clientState = "Demo123!";
+[FunctionName("BCWebHookDemo")]
+public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
+{ 
+    log.LogInformation("BCWebHookDemo function received a request.");
+
+    string validationToken = req.Query["validationToken"];
+    if (!String.IsNullOrWhiteSpace(validationToken))
+    {
+        log.LogInformation($"BCWebHookDemo function processed validationToken: {validationToken}");
+        return new OkObjectResult(validationToken);
+    }
+
+    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+    dynamic data = JsonConvert.DeserializeObject(requestBody);
+    if (data.value[0].clientState != clientState)
+    {
+        log.LogError("Received notification with incorrect clientState:");
+        log.LogError(requestBody);
+        return new BadRequestResult();
+    }
+    
+    log.LogInformation("New notification:");
+    log.LogInformation(requestBody);
+    
+    return new AcceptedResult();
+}
